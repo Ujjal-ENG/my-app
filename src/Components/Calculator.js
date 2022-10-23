@@ -15,6 +15,7 @@ export default class Calculator extends Component {
       scale,
     });
   };
+
   render() {
     const { temperature, scale } = this.state;
     const Celsius =
