@@ -1,9 +1,13 @@
-import Clock from "./Components/Clock";
+import Calculator from './Components/Calculator';
+
 
 function App() {
-  return <>
-    <Clock />
-  </>;
+
+  return (
+    <>
+      <Calculator />
+    </>
+  );
 }
 
 export default App;

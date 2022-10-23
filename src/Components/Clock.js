@@ -1,7 +1,7 @@
 import React from "react";
-
+import Button from "./Button";
 class Clock extends React.Component {
-  state = { date: new Date(), locale: "bn-Bd" };
+  state = { date: new Date(), locale: "bn-BD" };
 
   componentDidMount() {
     setInterval(() => {
@@ -25,7 +25,13 @@ class Clock extends React.Component {
     });
   };
   render() {
-    const { date, locale } = this.state;
+    const { locale } = this.state;
+    let button;
+    if (locale === "bn-BD") {
+      button = <Button change={this.handleClicked} locale="en-US" show={false}></Button>;
+    } else {
+      button = <Button change={this.handleClicked} locale="bn-BD" show={true}></Button>;
+    }
     return (
       <>
         <h1 className="heading">
@@ -33,9 +39,7 @@ class Clock extends React.Component {
             Hello {this.state.date.toLocaleTimeString(locale)}
           </span>
         </h1>
-        <button onClick={this.handleClicked.bind("en-US")}>
-          Click Me TO Change the Time Zone
-        </button>
+        {button}
       </>
     );
   }
