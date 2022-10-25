@@ -1,17 +1,15 @@
 import React from "react";
-
-class Button extends React.Component {
-  render() {
-    const { change, locale,show } = this.props;
-    return (
-      <>
-        <button type="button" onClick={() => change(locale)}>
-          {locale === "bn-BD" ? "Change CLock" : "Gori Change Koron"}
+const Button = ({ handleClick, childrean }) => {
+  
+  return (
+    <>
+      <p>
+        <button type="button" onClick={handleClick}>
+          Increment{childrean}
         </button>
-        {show && <p>Hello</p>}
-      </>
-    );
-  }
-}
+      </p>
+    </>
+  );
+};
 
-export default Button;
+export default React.memo(Button);
