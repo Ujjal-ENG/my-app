@@ -1,13 +1,11 @@
-import Calculator from './Components/Calculator';
+import React, { Component } from "react";
 
-
-function App() {
-
-  return (
-    <>
-      <Calculator />
-    </>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <>
+        
+      </>
+    );
+  }
 }
-
-export default App;
