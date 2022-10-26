@@ -1,11 +1,11 @@
 import React from "react";
 
-import Counter3 from "./Components/Counter3";
+import GetPost2 from "./Components/GetPost2";
 
 const App = () => {
   return (
     <>
-      <Counter3 />
+      <GetPost2 />
     </>
   );
 };
