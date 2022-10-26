@@ -29,11 +29,9 @@ const GetPost2 = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts/1")
+    fetch("https://jsonplaceholder.typicode.com/posts/11")
       .then((response) => response.json())
       .then((data) => {
-        console.log("Response");
-
         dispatch({ type: "SUCCESS", result: data });
       })
       .catch(() => {
