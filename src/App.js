@@ -1,10 +1,11 @@
 import React from "react";
-import Form from "./Components/Form";
+import Counter from "./Components/Counter";
+
 
 const App = () => {
   return (
     <>
-      <Form />
+      <Counter />
     </>
   );
 };
