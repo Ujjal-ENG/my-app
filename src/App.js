@@ -1,10 +1,11 @@
 import React from "react";
-import ComplexCounter from "./Components/ComplexCounter";
+
+import Counter3 from "./Components/Counter3";
 
 const App = () => {
   return (
     <>
-      <ComplexCounter />
+      <Counter3 />
     </>
   );
 };
